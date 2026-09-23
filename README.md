@@ -83,3 +83,7 @@ python -m pip install -r requirements.txt
 
 В VS Code выбрать интерпретатор из `.venv` через команду **Python: Select Interpreter**.
 
+
+## Отчёты по практическим работам
+
+- [Практическая работа №1 — загрузка, очистка и анализ Iris](practice-01/README.md) (ветка `practice_1`).
