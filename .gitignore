@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+practice-05/data/
+practice-05/report/hourly_dask/
+practice-05/report/hourly_pandas.parquet
+practice-05/report/rolling_sensor.png
