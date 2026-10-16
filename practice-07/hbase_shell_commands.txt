@@ -1,0 +1,26 @@
+# Практическая работа №7. Команды выполняются в HBase Shell.
+
+# Запуск HBase и оболочки из терминала:
+# start-hbase.sh
+# hbase shell
+
+# Создание таблицы students с двумя семействами столбцов.
+create 'students', 'info', 'grades'
+
+# Добавление данных в строку с row key 1001.
+put 'students', '1001', 'info:name', 'Aigerim'
+put 'students', '1001', 'info:age', '22'
+put 'students', '1001', 'grades:math', '95'
+
+# Получение одной строки и сканирование таблицы.
+get 'students', '1001'
+scan 'students'
+
+# Обновление значения и удаление одного столбца.
+put 'students', '1001', 'grades:math', '98'
+delete 'students', '1001', 'info:age'
+get 'students', '1001'
+
+# Удаление таблицы выполняется только после завершения демонстрации.
+# disable 'students'
+# drop 'students'
